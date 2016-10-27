@@ -1,0 +1,350 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		239465AA1DBEE068008BF67B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239465A91DBEE068008BF67B /* AppDelegate.swift */; };
+		239465AC1DBEE068008BF67B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239465AB1DBEE068008BF67B /* ViewController.swift */; };
+		239465B11DBEE069008BF67B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 239465B01DBEE069008BF67B /* Assets.xcassets */; };
+		239465B41DBEE069008BF67B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 239465B21DBEE069008BF67B /* LaunchScreen.storyboard */; };
+		239465BE1DBEE0A0008BF67B /* test.m in Sources */ = {isa = PBXBuildFile; fileRef = 239465BD1DBEE0A0008BF67B /* test.m */; };
+		239465C41DBEE0CD008BF67B /* BeaconModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 239465C11DBEE0CD008BF67B /* BeaconModel.m */; };
+		239465C51DBEE0CD008BF67B /* IbeaconTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 239465C31DBEE0CD008BF67B /* IbeaconTool.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		239465A61DBEE068008BF67B /* 叮当签到提醒.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "叮当签到提醒.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		239465A91DBEE068008BF67B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		239465AB1DBEE068008BF67B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		239465B01DBEE069008BF67B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		239465B31DBEE069008BF67B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		239465B51DBEE069008BF67B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		239465BB1DBEE09F008BF67B /* 叮当签到提醒-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "叮当签到提醒-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		239465BC1DBEE0A0008BF67B /* test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
+		239465BD1DBEE0A0008BF67B /* test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = test.m; sourceTree = "<group>"; };
+		239465C01DBEE0CD008BF67B /* BeaconModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconModel.h; sourceTree = "<group>"; };
+		239465C11DBEE0CD008BF67B /* BeaconModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconModel.m; sourceTree = "<group>"; };
+		239465C21DBEE0CD008BF67B /* IbeaconTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IbeaconTool.h; sourceTree = "<group>"; };
+		239465C31DBEE0CD008BF67B /* IbeaconTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IbeaconTool.m; sourceTree = "<group>"; };
+		239AE5301DBF2E280014222D /* 叮当签到提醒.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "叮当签到提醒.entitlements"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		239465A31DBEE067008BF67B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2394659D1DBEE067008BF67B = {
+			isa = PBXGroup;
+			children = (
+				239465BC1DBEE0A0008BF67B /* test.h */,
+				239465BD1DBEE0A0008BF67B /* test.m */,
+				239465A81DBEE068008BF67B /* 叮当签到提醒 */,
+				239465A71DBEE068008BF67B /* Products */,
+				239AE52D1DBF2E280014222D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		239465A71DBEE068008BF67B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				239465A61DBEE068008BF67B /* 叮当签到提醒.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		239465A81DBEE068008BF67B /* 叮当签到提醒 */ = {
+			isa = PBXGroup;
+			children = (
+				239AE5301DBF2E280014222D /* 叮当签到提醒.entitlements */,
+				239465BF1DBEE0CD008BF67B /* IbeaconTool */,
+				239465BB1DBEE09F008BF67B /* 叮当签到提醒-Bridging-Header.h */,
+				239465A91DBEE068008BF67B /* AppDelegate.swift */,
+				239465AB1DBEE068008BF67B /* ViewController.swift */,
+				239465B01DBEE069008BF67B /* Assets.xcassets */,
+				239465B21DBEE069008BF67B /* LaunchScreen.storyboard */,
+				239465B51DBEE069008BF67B /* Info.plist */,
+			);
+			path = "叮当签到提醒";
+			sourceTree = "<group>";
+		};
+		239465BF1DBEE0CD008BF67B /* IbeaconTool */ = {
+			isa = PBXGroup;
+			children = (
+				239465C01DBEE0CD008BF67B /* BeaconModel.h */,
+				239465C11DBEE0CD008BF67B /* BeaconModel.m */,
+				239465C21DBEE0CD008BF67B /* IbeaconTool.h */,
+				239465C31DBEE0CD008BF67B /* IbeaconTool.m */,
+			);
+			path = IbeaconTool;
+			sourceTree = "<group>";
+		};
+		239AE52D1DBF2E280014222D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		239465A51DBEE067008BF67B /* 叮当签到提醒 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 239465B81DBEE069008BF67B /* Build configuration list for PBXNativeTarget "叮当签到提醒" */;
+			buildPhases = (
+				239465A21DBEE067008BF67B /* Sources */,
+				239465A31DBEE067008BF67B /* Frameworks */,
+				239465A41DBEE067008BF67B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "叮当签到提醒";
+			productName = "叮当签到提醒";
+			productReference = 239465A61DBEE068008BF67B /* 叮当签到提醒.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2394659E1DBEE067008BF67B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = huatu;
+				TargetAttributes = {
+					239465A51DBEE067008BF67B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = PTUCTZC4VF;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.WAC = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 239465A11DBEE067008BF67B /* Build configuration list for PBXProject "叮当签到提醒" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2394659D1DBEE067008BF67B;
+			productRefGroup = 239465A71DBEE068008BF67B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				239465A51DBEE067008BF67B /* 叮当签到提醒 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		239465A41DBEE067008BF67B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				239465B41DBEE069008BF67B /* LaunchScreen.storyboard in Resources */,
+				239465B11DBEE069008BF67B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		239465A21DBEE067008BF67B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				239465C51DBEE0CD008BF67B /* IbeaconTool.m in Sources */,
+				239465AC1DBEE068008BF67B /* ViewController.swift in Sources */,
+				239465C41DBEE0CD008BF67B /* BeaconModel.m in Sources */,
+				239465AA1DBEE068008BF67B /* AppDelegate.swift in Sources */,
+				239465BE1DBEE0A0008BF67B /* test.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		239465B21DBEE069008BF67B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				239465B31DBEE069008BF67B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		239465B61DBEE069008BF67B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		239465B71DBEE069008BF67B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		239465B91DBEE069008BF67B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = PTUCTZC4VF;
+				INFOPLIST_FILE = "叮当签到提醒/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huatu.------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "叮当签到提醒-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
+			};
+			name = Debug;
+		};
+		239465BA1DBEE069008BF67B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = PTUCTZC4VF;
+				INFOPLIST_FILE = "叮当签到提醒/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huatu.------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "叮当签到提醒-Bridging-Header.h";
+				SWIFT_VERSION = 2.3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		239465A11DBEE067008BF67B /* Build configuration list for PBXProject "叮当签到提醒" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				239465B61DBEE069008BF67B /* Debug */,
+				239465B71DBEE069008BF67B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		239465B81DBEE069008BF67B /* Build configuration list for PBXNativeTarget "叮当签到提醒" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				239465B91DBEE069008BF67B /* Debug */,
+				239465BA1DBEE069008BF67B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2394659E1DBEE067008BF67B /* Project object */;
+}
