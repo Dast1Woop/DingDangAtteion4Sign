@@ -252,7 +252,7 @@ return [[self alloc] init];
 - (NSArray *)getCrtPlaceMajorArr
 // WithAreaID:()//10078:辽宁major，只有这一个
 {
-  return @[ @10078, @10083 ];
+  return @[ @888 ];
 }
 
 - (BOOL)justifyIfNeedThisBeacon:(BeaconModel *)bcModel {
