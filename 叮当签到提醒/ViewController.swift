@@ -62,7 +62,7 @@ class ViewController: UIViewController {
       let lMajor = lM.xmajor.description
       let lMinor = lM.xminor.description
       let lRssi = "\(lM.xrssi)"
-      lStr4Show +=  "major = " + lMajor + "  " + "minor = " + lMinor + "  " + "rssi = " + lRssi + "\n"
+      lStr4Show +=  "     major = " + lMajor + "  " + "minor = " + lMinor + "  " + "rssi = " + lRssi + "\n"
     }
     
     lbl4ShowIbeaconMsg.text = lStr4Show

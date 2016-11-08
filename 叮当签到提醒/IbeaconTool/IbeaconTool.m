@@ -136,6 +136,10 @@ return [[self alloc] init];
   //在离开区域时，停止位置更新了，所以这里进入区域时，要重新开启。
   [self.locationManager startUpdatingLocation];
 
+    if (0 == self.gNowDetectedArrM.count) {
+      return;
+    }
+  
     UILocalNotification *localNotification = [[UILocalNotification alloc]
     init];
     localNotification.alertBody = kStartWorkingMsg;
@@ -147,6 +151,7 @@ return [[self alloc] init];
     localNotification.soundName = @"msg.caf";
     [[UIApplication sharedApplication]
         presentLocalNotificationNow:localNotification];
+  
 }
 
 - (void)locationManager:(CLLocationManager *)manager
@@ -154,6 +159,10 @@ return [[self alloc] init];
 
   [manager stopRangingBeaconsInRegion:(CLBeaconRegion *)region];
   [self.locationManager stopUpdatingLocation];
+  
+  if (0 == self.gNowDetectedArrM.count) {
+    return;
+  }
   
     UILocalNotification *localNotification = [[UILocalNotification alloc]
     init];
