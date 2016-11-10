@@ -130,7 +130,7 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = PTUCTZC4VF;
 						LastSwiftMigration = 0800;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -299,8 +299,10 @@
 				INFOPLIST_FILE = "叮当签到提醒/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.huatu.------";
+				PRODUCT_BUNDLE_IDENTIFIER = com.huatu.DDSign;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "fa9d1f43-b603-4fa9-baab-c57633a7f256";
+				PROVISIONING_PROFILE_SPECIFIER = HTWildcard4DevelopPP;
 				SWIFT_OBJC_BRIDGING_HEADER = "叮当签到提醒-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 2.3;
@@ -312,12 +314,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = PTUCTZC4VF;
 				INFOPLIST_FILE = "叮当签到提醒/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.huatu.------";
+				PRODUCT_BUNDLE_IDENTIFIER = com.huatu.DDSign;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "cdbbd06b-aefa-4353-96b4-4843ec86110e";
+				PROVISIONING_PROFILE_SPECIFIER = HTADHocWildcard4DisPP;
 				SWIFT_OBJC_BRIDGING_HEADER = "叮当签到提醒-Bridging-Header.h";
 				SWIFT_VERSION = 2.3;
 			};
