@@ -37,8 +37,8 @@ class ViewController: UIViewController {
     view.addGestureRecognizer(lG4DoubleTap)
     
     /* swipe 跟tap有冲突，tap优先级高？！*/
-    let lG4Swipe = UILongPressGestureRecognizer.init(target: self, action: #selector(m4Swipe2RmvLbl))
-    view.addGestureRecognizer(lG4Swipe)
+    let lG4LongPress = UILongPressGestureRecognizer.init(target: self, action: #selector(m4LongPress2RmvLbl))
+    view.addGestureRecognizer(lG4LongPress)
 
   }
   
@@ -55,7 +55,7 @@ class ViewController: UIViewController {
     view.addSubview(lbl4ShowIbeaconMsg)
   }
   
-  func m4Swipe2RmvLbl()  {
+  func m4LongPress2RmvLbl()  {
     lbl4ShowIbeaconMsg.removeFromSuperview()
     
     gTimer?.invalidate()
