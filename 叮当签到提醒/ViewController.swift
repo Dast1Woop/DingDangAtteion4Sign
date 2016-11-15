@@ -37,12 +37,18 @@ class ViewController: UIViewController {
     view.addGestureRecognizer(lG4DoubleTap)
     
     /* swipe 跟tap有冲突，tap优先级高？！*/
-    let lG4Swipe = UIPinchGestureRecognizer.init(target: self, action: #selector(m4Swipe2RmvLbl))
+    let lG4Swipe = UILongPressGestureRecognizer.init(target: self, action: #selector(m4Swipe2RmvLbl))
     view.addGestureRecognizer(lG4Swipe)
+
   }
   
   func m4DoubleTap(ges : UITapGestureRecognizer) {
-   
+    
+    /* 已定时的话就不能再创建了！否则会同时存在多个定时器 */
+    if gTimer != nil{
+      return
+    }
+    
     gTimer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(m4UpdateLbl), userInfo: nil, repeats: true)
     NSRunLoop.currentRunLoop().addTimer(gTimer!, forMode: NSRunLoopCommonModes)
  
@@ -66,7 +72,8 @@ class ViewController: UIViewController {
     }
     
     lbl4ShowIbeaconMsg.text = lStr4Show
-
+    
+    iConsole.info("ibeacons:\n%@", args: getVaList([lStr4Show as NSString]))
   }
 
   override func didReceiveMemoryWarning() {

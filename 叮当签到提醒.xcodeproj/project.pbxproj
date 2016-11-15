@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		230AA52C1DDAB83A00FC464C /* GTMStackTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 230AA5291DDAB83A00FC464C /* GTMStackTrace.m */; };
+		230AA52D1DDAB83A00FC464C /* iConsole.m in Sources */ = {isa = PBXBuildFile; fileRef = 230AA52B1DDAB83A00FC464C /* iConsole.m */; };
 		239465AA1DBEE068008BF67B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239465A91DBEE068008BF67B /* AppDelegate.swift */; };
 		239465AC1DBEE068008BF67B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239465AB1DBEE068008BF67B /* ViewController.swift */; };
 		239465B11DBEE069008BF67B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 239465B01DBEE069008BF67B /* Assets.xcassets */; };
@@ -17,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		230AA5281DDAB83A00FC464C /* GTMStackTrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMStackTrace.h; sourceTree = "<group>"; };
+		230AA5291DDAB83A00FC464C /* GTMStackTrace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMStackTrace.m; sourceTree = "<group>"; };
+		230AA52A1DDAB83A00FC464C /* iConsole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iConsole.h; sourceTree = "<group>"; };
+		230AA52B1DDAB83A00FC464C /* iConsole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iConsole.m; sourceTree = "<group>"; };
 		239465A61DBEE068008BF67B /* 叮当签到提醒.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "叮当签到提醒.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		239465A91DBEE068008BF67B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		239465AB1DBEE068008BF67B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -44,6 +50,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		230AA5261DDAB83A00FC464C /* iConsole */ = {
+			isa = PBXGroup;
+			children = (
+				230AA5271DDAB83A00FC464C /* GTM */,
+				230AA52A1DDAB83A00FC464C /* iConsole.h */,
+				230AA52B1DDAB83A00FC464C /* iConsole.m */,
+			);
+			path = iConsole;
+			sourceTree = "<group>";
+		};
+		230AA5271DDAB83A00FC464C /* GTM */ = {
+			isa = PBXGroup;
+			children = (
+				230AA5281DDAB83A00FC464C /* GTMStackTrace.h */,
+				230AA5291DDAB83A00FC464C /* GTMStackTrace.m */,
+			);
+			path = GTM;
+			sourceTree = "<group>";
+		};
 		2394659D1DBEE067008BF67B = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				239AE5301DBF2E280014222D /* 叮当签到提醒.entitlements */,
+				230AA5261DDAB83A00FC464C /* iConsole */,
 				239465BF1DBEE0CD008BF67B /* IbeaconTool */,
 				239465BB1DBEE09F008BF67B /* 叮当签到提醒-Bridging-Header.h */,
 				239465A91DBEE068008BF67B /* AppDelegate.swift */,
@@ -178,7 +204,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				239465C51DBEE0CD008BF67B /* IbeaconTool.m in Sources */,
+				230AA52C1DDAB83A00FC464C /* GTMStackTrace.m in Sources */,
 				239465AC1DBEE068008BF67B /* ViewController.swift in Sources */,
+				230AA52D1DDAB83A00FC464C /* iConsole.m in Sources */,
 				239465C41DBEE0CD008BF67B /* BeaconModel.m in Sources */,
 				239465AA1DBEE068008BF67B /* AppDelegate.swift in Sources */,
 				239465BE1DBEE0A0008BF67B /* test.m in Sources */,

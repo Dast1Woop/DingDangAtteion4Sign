@@ -4,4 +4,5 @@
 
 #import "BeaconModel.h"
 #import "IbeaconTool.h"
+#import "iConsole.h"
 
