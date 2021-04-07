@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+    <key>NSBluetoothAlwaysUsageDescription</key>
+    <string>APP需要使用蓝牙进行区域监听</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>APP需要使用蓝牙进行区域监听</string>
+    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+    <string>APP需要使用蓝牙进行区域监听</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>

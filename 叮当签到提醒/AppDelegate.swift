@@ -15,13 +15,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   var window: UIWindow?
 
-
-  func application( application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    func applicationDidFinishLaunching(_ application: UIApplication)
+//  func application( application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool
+  {
     // Override point for customization after application launch.
     
 
-     window = iConsoleWindow(frame: UIScreen.mainScreen().bounds)
-    window?.backgroundColor = UIColor.whiteColor()
+    window = iConsoleWindow(frame: UIScreen.main.bounds)
+//    window = UIWindow(frame: UIScreen.main.bounds)
+    window?.backgroundColor = UIColor.white
     
 
     
@@ -32,25 +34,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     window?.makeKeyAndVisible()
     
     // MARK:注册本地通知,才能使UILocateNtfy代码生效！
-    let lNtfySet = UIUserNotificationSettings.init(forTypes: [.Alert, .Sound, .Badge], categories: nil)
+    let lNtfySet = UIUserNotificationSettings.init(types: [.alert, .sound, .badge], categories: nil)
     application.registerUserNotificationSettings(lNtfySet)
     
-    IbeaconTool.sharedIbeaconTool().startIbeacon()
+    IbeaconTool.shared().startIbeacon()
     
-    return true
+//    return true
+        
   }
 
-  func applicationWillResignActive(application: UIApplication) {
+    func applicationWillResignActive(_ application: UIApplication) {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
   }
 
-  func applicationDidEnterBackground( application: UIApplication) {
+    func applicationDidEnterBackground( _ application: UIApplication) {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
   }
 
-  func applicationWillEnterForeground( application: UIApplication) {
+    private func applicationWillEnterForeground( application: UIApplication) {
     // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
   }
 
@@ -60,7 +63,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func applicationWillTerminate( application: UIApplication) {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-    IbeaconTool.sharedIbeaconTool().stopIBeacon()
   }
 
 

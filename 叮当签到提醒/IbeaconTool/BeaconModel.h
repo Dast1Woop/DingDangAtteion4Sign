@@ -6,9 +6,8 @@
 //  Copyright © 2016年 马玉龙. All rights reserved.
 
 /** 使用注意：
- 1 applicationWillTerminate里调这个方法 - (void)stopIBeacon；
- 2.必须和BeaconModel一起使用
- 3.info.plist 必须加入这个键：NSLocationAlwaysUsageDescription
+ 必须和BeaconModel一起使用
+ info.plist 必须加入权限请求
  */
 
 #import <CoreLocation/CoreLocation.h>
