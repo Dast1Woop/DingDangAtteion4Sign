@@ -42,4 +42,6 @@
 
 + (instancetype)sharedIbeaconTool ;
 
+- (void)presentLocalNtfyWithStr:(NSString *)str;
+
 @end

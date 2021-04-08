@@ -156,6 +156,20 @@ static id instance;
     
 }
 
+- (void)presentLocalNtfyWithStr:(NSString *)str{
+    UILocalNotification *localNotification = [[UILocalNotification alloc]
+                                              init];
+    localNotification.alertBody = str;
+    
+    /** 通过点击通知打开应用时的启动图片,这里使用程序启动图片 */
+    localNotification.alertLaunchImage = @"Default";
+    
+    /** 通知声音（需要真机才能听到声音） */
+    localNotification.soundName = @"msg.caf";
+    [[UIApplication sharedApplication]
+     presentLocalNotificationNow:localNotification];
+}
+
 - (void)locationManager:(CLLocationManager *)manager
           didExitRegion:(CLRegion *)region {
     [iConsole info:@"%s",__func__];

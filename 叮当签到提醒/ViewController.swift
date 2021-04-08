@@ -20,6 +20,7 @@ class ViewController: UIViewController {
   }()
   
   private var gTimer : Timer?
+  private var localNtfyTimeCounter = 0
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -38,6 +39,9 @@ class ViewController: UIViewController {
     lG4DoubleTap.numberOfTapsRequired = 2
     view.addGestureRecognizer(lG4DoubleTap)
     
+    //代码触发双击手势
+    m4DoubleTap(ges: lG4DoubleTap)
+    
     /* swipe 跟tap有冲突，tap优先级高？！*/
     let lG4LongPress = UILongPressGestureRecognizer.init(target: self, action: #selector(m4LongPress2RmvLbl))
     view.addGestureRecognizer(lG4LongPress)
@@ -51,7 +55,7 @@ class ViewController: UIViewController {
       return
     }
     
-        gTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(m4UpdateLbl), userInfo: nil, repeats: true)
+        gTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(m4UpdateLblAndPostLocalNtfy), userInfo: nil, repeats: true)
         RunLoop.current.add(gTimer!, forMode: RunLoop.Mode.common)
  
     view.addSubview(lbl4ShowIbeaconMsg)
@@ -64,7 +68,7 @@ class ViewController: UIViewController {
     gTimer = nil
   }
   
-    @objc func m4UpdateLbl()  {
+    @objc func m4UpdateLblAndPostLocalNtfy()  {
     var  lStr4Show = ""
         for  lM in IbeaconTool.shared().beaconModelsArray {
             let lMajor = (lM as AnyObject).xmajor.description
@@ -75,7 +79,15 @@ class ViewController: UIViewController {
     
     lbl4ShowIbeaconMsg.text = lStr4Show
     
-    iConsole.info("ibeacons:\n%@", args: getVaList([lStr4Show as NSString]))
+//    iConsole.info("ibeacons:\n%@", args: getVaList([lStr4Show as NSString]))
+        
+    localNtfyTimeCounter += 1
+        if localNtfyTimeCounter >= 120 {
+            localNtfyTimeCounter = 0
+            if let lArr = IbeaconTool.shared()?.beaconModelsArray,lArr.count > 0 {
+                IbeaconTool.shared()?.presentLocalNtfy(withStr:"春眠不觉晓，登记要趁早")
+            }
+        }
   }
 
   override func didReceiveMemoryWarning() {
